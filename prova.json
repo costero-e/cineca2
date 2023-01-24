@@ -1,0 +1,1179 @@
+{
+    "meta": {
+        "beaconId": "org.ega-archive.ga4gh-approval-beacon-test",
+        "apiVersion": "v2.0.0",
+        "returnedGranularity": "record",
+        "receivedRequestSummary": {
+            "apiVersion": "v2.0.0",
+            "requestedSchemas": [],
+            "filters": [],
+            "requestParameters": {},
+            "includeResultsetResponses": "HIT",
+            "pagination": {
+                "skip": 0,
+                "limit": 10
+            },
+            "requestedGranularity": "record",
+            "testMode": false
+        },
+        "returnedSchemas": [
+            {
+                "entityType": "genomicVariation",
+                "schema": "beacon-g_variant-v2.0.0"
+            }
+        ]
+    },
+    "responseSummary": {
+        "exists": true,
+        "numTotalResults": 13
+    },
+    "response": {
+        "resultSets": [
+            {
+                "id": "",
+                "setType": "",
+                "exists": true,
+                "resultsCount": 13,
+                "results": [
+                    {
+                        "_id": "63ca9374c3eb8565af9413c2",
+                        "referenceBases": "C",
+                        "identifiers": {
+                            "proteinHGVSIds": [
+                                null
+                            ],
+                            "genomicHGVSId": [
+                                null
+                            ],
+                            "clinVarIds": [
+                                null
+                            ]
+                        },
+                        "position": {
+                            "end": [
+                                9411327
+                            ],
+                            "refseqId": "21",
+                            "start": [
+                                9411326
+                            ],
+                            "assemblyId": "hs37"
+                        },
+                        "variantInternalId": "chr21_9411327_C_G",
+                        "caseLevelData": [
+                            {
+                                "individualId": "NA24695",
+                                "biosampleId": "NA24695"
+                            },
+                            {
+                                "individualId": "NA24694",
+                                "biosampleId": "NA24694"
+                            },
+                            {
+                                "biosampleId": "NA24631",
+                                "individualId": "NA24631"
+                            }
+                        ],
+                        "molecularAttributes": {
+                            "molecularEffects": [
+                                "MODIFIER"
+                            ],
+                            "aminoacidChanges": [
+                                null
+                            ],
+                            "geneIds": [
+                                "CHR_START-MIR3648-1"
+                            ]
+                        },
+                        "variantType": "SNP",
+                        "alternateBases": "G",
+                        "frequencyInPopulations": [
+                            {
+                                "frequencies": [
+                                    {
+                                        "population": "AFR_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ],
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)"
+                            },
+                            {
+                                "frequencies": [
+                                    {
+                                        "population": "AMR_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ],
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org"
+                            },
+                            {
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "EAS_AF"
+                                    }
+                                ],
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org"
+                            },
+                            {
+                                "frequencies": [
+                                    {
+                                        "population": "EUR_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ],
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)"
+                            },
+                            {
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "SAS_AF"
+                                    }
+                                ],
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)"
+                            }
+                        ],
+                        "variantLevelData": {
+                            "clinicalInterpretations": [
+                                null
+                            ],
+                            "phenotypicEffects": [
+                                "MODIFIER"
+                            ]
+                        }
+                    },
+                    {
+                        "_id": "63ca9374c3eb8565af9413c3",
+                        "frequencyInPopulations": [
+                            {
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "frequencies": [
+                                    {
+                                        "population": "AFR_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ]
+                            },
+                            {
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "AMR_AF"
+                                    }
+                                ],
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)"
+                            },
+                            {
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "EAS_AF"
+                                    }
+                                ]
+                            },
+                            {
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "frequencies": [
+                                    {
+                                        "population": "EUR_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ]
+                            },
+                            {
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "frequencies": [
+                                    {
+                                        "population": "SAS_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ]
+                            }
+                        ],
+                        "alternateBases": "T",
+                        "variantType": "SNP",
+                        "variantLevelData": {
+                            "clinicalInterpretations": [
+                                null
+                            ],
+                            "phenotypicEffects": [
+                                "MODIFIER"
+                            ]
+                        },
+                        "position": {
+                            "assemblyId": "hs37",
+                            "refseqId": "21",
+                            "end": [
+                                9411500
+                            ],
+                            "start": [
+                                9411499
+                            ]
+                        },
+                        "variantInternalId": "chr21_9411500_G_T",
+                        "referenceBases": "G",
+                        "identifiers": {
+                            "clinVarIds": [
+                                null
+                            ],
+                            "proteinHGVSIds": [
+                                null
+                            ],
+                            "genomicHGVSId": [
+                                null
+                            ]
+                        },
+                        "caseLevelData": [
+                            {
+                                "biosampleId": "NA24695",
+                                "individualId": "NA24695"
+                            },
+                            {
+                                "biosampleId": "NA24694",
+                                "individualId": "NA24694"
+                            },
+                            {
+                                "biosampleId": "NA24631",
+                                "individualId": "NA24631"
+                            }
+                        ],
+                        "molecularAttributes": {
+                            "molecularEffects": [
+                                "MODIFIER"
+                            ],
+                            "aminoacidChanges": [
+                                null
+                            ],
+                            "geneIds": [
+                                "CHR_START-MIR3648-1"
+                            ]
+                        }
+                    },
+                    {
+                        "_id": "63ca9374c3eb8565af9413c4",
+                        "variantInternalId": "chr21_9411602_T_C",
+                        "position": {
+                            "assemblyId": "hs37",
+                            "end": [
+                                9411602
+                            ],
+                            "refseqId": "21",
+                            "start": [
+                                9411601
+                            ]
+                        },
+                        "referenceBases": "T",
+                        "identifiers": {
+                            "clinVarIds": [
+                                null
+                            ],
+                            "proteinHGVSIds": [
+                                null
+                            ],
+                            "genomicHGVSId": [
+                                null
+                            ]
+                        },
+                        "molecularAttributes": {
+                            "geneIds": [
+                                "CHR_START-MIR3648-1"
+                            ],
+                            "molecularEffects": [
+                                "MODIFIER"
+                            ],
+                            "aminoacidChanges": [
+                                null
+                            ]
+                        },
+                        "caseLevelData": [
+                            {
+                                "individualId": "NA24695",
+                                "biosampleId": "NA24695"
+                            },
+                            {
+                                "individualId": "NA24694",
+                                "biosampleId": "NA24694"
+                            },
+                            {
+                                "biosampleId": "NA24631",
+                                "individualId": "NA24631"
+                            }
+                        ],
+                        "frequencyInPopulations": [
+                            {
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "AFR_AF"
+                                    }
+                                ],
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org"
+                            },
+                            {
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "AMR_AF"
+                                    }
+                                ],
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org"
+                            },
+                            {
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "EAS_AF"
+                                    }
+                                ]
+                            },
+                            {
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "EUR_AF"
+                                    }
+                                ]
+                            },
+                            {
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "frequencies": [
+                                    {
+                                        "population": "SAS_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ]
+                            }
+                        ],
+                        "alternateBases": "C",
+                        "variantType": "SNP",
+                        "variantLevelData": {
+                            "phenotypicEffects": [
+                                "MODIFIER"
+                            ],
+                            "clinicalInterpretations": [
+                                null
+                            ]
+                        }
+                    },
+                    {
+                        "_id": "63ca9374c3eb8565af9413c5",
+                        "variantLevelData": {
+                            "phenotypicEffects": [
+                                "MODIFIER"
+                            ],
+                            "clinicalInterpretations": [
+                                null
+                            ]
+                        },
+                        "frequencyInPopulations": [
+                            {
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "AFR_AF"
+                                    }
+                                ],
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org"
+                            },
+                            {
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "AMR_AF"
+                                    }
+                                ]
+                            },
+                            {
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "EAS_AF"
+                                    }
+                                ],
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)"
+                            },
+                            {
+                                "frequencies": [
+                                    {
+                                        "population": "EUR_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ],
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org"
+                            },
+                            {
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "SAS_AF"
+                                    }
+                                ],
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org"
+                            }
+                        ],
+                        "alternateBases": "T",
+                        "variantType": "SNP",
+                        "caseLevelData": [
+                            {
+                                "biosampleId": "NA24695",
+                                "individualId": "NA24695"
+                            },
+                            {
+                                "biosampleId": "NA24694",
+                                "individualId": "NA24694"
+                            },
+                            {
+                                "individualId": "NA24631",
+                                "biosampleId": "NA24631"
+                            }
+                        ],
+                        "molecularAttributes": {
+                            "geneIds": [
+                                "CHR_START-MIR3648-1"
+                            ],
+                            "molecularEffects": [
+                                "MODIFIER"
+                            ],
+                            "aminoacidChanges": [
+                                null
+                            ]
+                        },
+                        "position": {
+                            "end": [
+                                9411410
+                            ],
+                            "refseqId": "21",
+                            "start": [
+                                9411409
+                            ],
+                            "assemblyId": "hs37"
+                        },
+                        "variantInternalId": "chr21_9411410_C_T",
+                        "referenceBases": "C",
+                        "identifiers": {
+                            "clinVarIds": [
+                                null
+                            ],
+                            "genomicHGVSId": [
+                                null
+                            ],
+                            "proteinHGVSIds": [
+                                null
+                            ]
+                        }
+                    },
+                    {
+                        "_id": "63ca9374c3eb8565af9413c6",
+                        "variantLevelData": {
+                            "clinicalInterpretations": [
+                                null
+                            ],
+                            "phenotypicEffects": [
+                                "MODIFIER"
+                            ]
+                        },
+                        "frequencyInPopulations": [
+                            {
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "AFR_AF"
+                                    }
+                                ],
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org"
+                            },
+                            {
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "AMR_AF"
+                                    }
+                                ],
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org"
+                            },
+                            {
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "frequencies": [
+                                    {
+                                        "population": "EAS_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ]
+                            },
+                            {
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "frequencies": [
+                                    {
+                                        "population": "EUR_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ]
+                            },
+                            {
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "frequencies": [
+                                    {
+                                        "population": "SAS_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ]
+                            }
+                        ],
+                        "variantType": "SNP",
+                        "alternateBases": "T",
+                        "caseLevelData": [
+                            {
+                                "individualId": "NA24695",
+                                "biosampleId": "NA24695"
+                            },
+                            {
+                                "biosampleId": "NA24694",
+                                "individualId": "NA24694"
+                            },
+                            {
+                                "individualId": "NA24631",
+                                "biosampleId": "NA24631"
+                            }
+                        ],
+                        "molecularAttributes": {
+                            "molecularEffects": [
+                                "MODIFIER"
+                            ],
+                            "aminoacidChanges": [
+                                null
+                            ],
+                            "geneIds": [
+                                "CHR_START-MIR3648-1"
+                            ]
+                        },
+                        "position": {
+                            "refseqId": "21",
+                            "end": [
+                                9411609
+                            ],
+                            "start": [
+                                9411608
+                            ],
+                            "assemblyId": "hs37"
+                        },
+                        "variantInternalId": "chr21_9411609_G_T",
+                        "referenceBases": "G",
+                        "identifiers": {
+                            "clinVarIds": [
+                                null
+                            ],
+                            "proteinHGVSIds": [
+                                null
+                            ],
+                            "genomicHGVSId": [
+                                null
+                            ]
+                        }
+                    },
+                    {
+                        "_id": "63ca9374c3eb8565af9413c7",
+                        "variantType": "SNP",
+                        "alternateBases": "T",
+                        "frequencyInPopulations": [
+                            {
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "frequencies": [
+                                    {
+                                        "population": "AFR_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ]
+                            },
+                            {
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "AMR_AF"
+                                    }
+                                ]
+                            },
+                            {
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "frequencies": [
+                                    {
+                                        "population": "EAS_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ]
+                            },
+                            {
+                                "frequencies": [
+                                    {
+                                        "population": "EUR_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ],
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org"
+                            },
+                            {
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "SAS_AF"
+                                    }
+                                ]
+                            }
+                        ],
+                        "variantLevelData": {
+                            "clinicalInterpretations": [
+                                null
+                            ],
+                            "phenotypicEffects": [
+                                "MODIFIER"
+                            ]
+                        },
+                        "referenceBases": "C",
+                        "identifiers": {
+                            "clinVarIds": [
+                                null
+                            ],
+                            "proteinHGVSIds": [
+                                null
+                            ],
+                            "genomicHGVSId": [
+                                null
+                            ]
+                        },
+                        "variantInternalId": "chr21_9411318_C_T",
+                        "position": {
+                            "start": [
+                                9411317
+                            ],
+                            "refseqId": "21",
+                            "end": [
+                                9411318
+                            ],
+                            "assemblyId": "hs37"
+                        },
+                        "molecularAttributes": {
+                            "aminoacidChanges": [
+                                null
+                            ],
+                            "molecularEffects": [
+                                "MODIFIER"
+                            ],
+                            "geneIds": [
+                                "CHR_START-MIR3648-1"
+                            ]
+                        },
+                        "caseLevelData": [
+                            {
+                                "biosampleId": "NA24695",
+                                "individualId": "NA24695"
+                            },
+                            {
+                                "individualId": "NA24694",
+                                "biosampleId": "NA24694"
+                            },
+                            {
+                                "biosampleId": "NA24631",
+                                "individualId": "NA24631"
+                            }
+                        ]
+                    },
+                    {
+                        "_id": "63ca9374c3eb8565af9413c8",
+                        "variantInternalId": "chr21_9411645_A_G",
+                        "position": {
+                            "assemblyId": "hs37",
+                            "start": [
+                                9411644
+                            ],
+                            "end": [
+                                9411645
+                            ],
+                            "refseqId": "21"
+                        },
+                        "identifiers": {
+                            "clinVarIds": [
+                                null
+                            ],
+                            "proteinHGVSIds": [
+                                null
+                            ],
+                            "genomicHGVSId": [
+                                null
+                            ]
+                        },
+                        "referenceBases": "A",
+                        "molecularAttributes": {
+                            "molecularEffects": [
+                                "MODIFIER"
+                            ],
+                            "aminoacidChanges": [
+                                null
+                            ],
+                            "geneIds": [
+                                "CHR_START-MIR3648-1"
+                            ]
+                        },
+                        "caseLevelData": [
+                            {
+                                "individualId": "NA24695",
+                                "biosampleId": "NA24695"
+                            },
+                            {
+                                "biosampleId": "NA24694",
+                                "individualId": "NA24694"
+                            },
+                            {
+                                "individualId": "NA24631",
+                                "biosampleId": "NA24631"
+                            }
+                        ],
+                        "frequencyInPopulations": [
+                            {
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "frequencies": [
+                                    {
+                                        "population": "AFR_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ]
+                            },
+                            {
+                                "frequencies": [
+                                    {
+                                        "population": "AMR_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ],
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org"
+                            },
+                            {
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "frequencies": [
+                                    {
+                                        "population": "EAS_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ]
+                            },
+                            {
+                                "frequencies": [
+                                    {
+                                        "population": "EUR_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ],
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)"
+                            },
+                            {
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "frequencies": [
+                                    {
+                                        "population": "SAS_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ]
+                            }
+                        ],
+                        "variantType": "SNP",
+                        "alternateBases": "G",
+                        "variantLevelData": {
+                            "clinicalInterpretations": [
+                                null
+                            ],
+                            "phenotypicEffects": [
+                                "MODIFIER"
+                            ]
+                        }
+                    },
+                    {
+                        "_id": "63ca9374c3eb8565af9413c9",
+                        "frequencyInPopulations": [
+                            {
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "frequencies": [
+                                    {
+                                        "population": "AFR_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ]
+                            },
+                            {
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "AMR_AF"
+                                    }
+                                ],
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org"
+                            },
+                            {
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "frequencies": [
+                                    {
+                                        "population": "EAS_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ]
+                            },
+                            {
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "frequencies": [
+                                    {
+                                        "population": "EUR_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ]
+                            },
+                            {
+                                "frequencies": [
+                                    {
+                                        "population": "SAS_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ],
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)"
+                            }
+                        ],
+                        "alternateBases": "T",
+                        "variantType": "SNP",
+                        "variantLevelData": {
+                            "clinicalInterpretations": [
+                                null
+                            ],
+                            "phenotypicEffects": [
+                                "MODIFIER"
+                            ]
+                        },
+                        "position": {
+                            "assemblyId": "hs37",
+                            "end": [
+                                9411785
+                            ],
+                            "refseqId": "21",
+                            "start": [
+                                9411784
+                            ]
+                        },
+                        "variantInternalId": "chr21_9411785_G_T",
+                        "referenceBases": "G",
+                        "identifiers": {
+                            "genomicHGVSId": [
+                                null
+                            ],
+                            "proteinHGVSIds": [
+                                null
+                            ],
+                            "clinVarIds": [
+                                null
+                            ]
+                        },
+                        "caseLevelData": [
+                            {
+                                "biosampleId": "NA24695",
+                                "individualId": "NA24695"
+                            },
+                            {
+                                "individualId": "NA24694",
+                                "biosampleId": "NA24694"
+                            },
+                            {
+                                "biosampleId": "NA24631",
+                                "individualId": "NA24631"
+                            }
+                        ],
+                        "molecularAttributes": {
+                            "aminoacidChanges": [
+                                null
+                            ],
+                            "molecularEffects": [
+                                "MODIFIER"
+                            ],
+                            "geneIds": [
+                                "CHR_START-MIR3648-1"
+                            ]
+                        }
+                    },
+                    {
+                        "_id": "63ca9374c3eb8565af9413ca",
+                        "caseLevelData": [
+                            {
+                                "biosampleId": "NA24695",
+                                "individualId": "NA24695"
+                            },
+                            {
+                                "individualId": "NA24694",
+                                "biosampleId": "NA24694"
+                            },
+                            {
+                                "biosampleId": "NA24631",
+                                "individualId": "NA24631"
+                            }
+                        ],
+                        "molecularAttributes": {
+                            "aminoacidChanges": [
+                                null
+                            ],
+                            "molecularEffects": [
+                                "MODIFIER"
+                            ],
+                            "geneIds": [
+                                "CHR_START-MIR3648-1"
+                            ]
+                        },
+                        "position": {
+                            "refseqId": "21",
+                            "end": [
+                                9412269
+                            ],
+                            "start": [
+                                9412268
+                            ],
+                            "assemblyId": "hs37"
+                        },
+                        "variantInternalId": "chr21_9412269_A_T",
+                        "referenceBases": "A",
+                        "identifiers": {
+                            "genomicHGVSId": [
+                                null
+                            ],
+                            "proteinHGVSIds": [
+                                null
+                            ],
+                            "clinVarIds": [
+                                null
+                            ]
+                        },
+                        "variantLevelData": {
+                            "phenotypicEffects": [
+                                "MODIFIER"
+                            ],
+                            "clinicalInterpretations": [
+                                null
+                            ]
+                        },
+                        "frequencyInPopulations": [
+                            {
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "AFR_AF"
+                                    }
+                                ]
+                            },
+                            {
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "AMR_AF"
+                                    }
+                                ]
+                            },
+                            {
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "frequencies": [
+                                    {
+                                        "population": "EAS_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ]
+                            },
+                            {
+                                "frequencies": [
+                                    {
+                                        "population": "EUR_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ],
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org"
+                            },
+                            {
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "frequencies": [
+                                    {
+                                        "population": "SAS_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ]
+                            }
+                        ],
+                        "variantType": "SNP",
+                        "alternateBases": "T"
+                    },
+                    {
+                        "_id": "63ca9374c3eb8565af9413cb",
+                        "caseLevelData": [
+                            {
+                                "individualId": "NA24695",
+                                "biosampleId": "NA24695"
+                            },
+                            {
+                                "individualId": "NA24631",
+                                "biosampleId": "NA24631"
+                            }
+                        ],
+                        "molecularAttributes": {
+                            "geneIds": [
+                                "CHR_START-MIR3648-1"
+                            ],
+                            "molecularEffects": [
+                                "MODIFIER"
+                            ],
+                            "aminoacidChanges": [
+                                null
+                            ]
+                        },
+                        "position": {
+                            "assemblyId": "hs37",
+                            "start": [
+                                9412357
+                            ],
+                            "refseqId": "21",
+                            "end": [
+                                9412358
+                            ]
+                        },
+                        "variantInternalId": "chr21_9412358_T_TA",
+                        "referenceBases": "T",
+                        "identifiers": {
+                            "clinVarIds": [
+                                null
+                            ],
+                            "genomicHGVSId": [
+                                null
+                            ],
+                            "proteinHGVSIds": [
+                                null
+                            ]
+                        },
+                        "variantLevelData": {
+                            "clinicalInterpretations": [
+                                null
+                            ],
+                            "phenotypicEffects": [
+                                "MODIFIER"
+                            ]
+                        },
+                        "frequencyInPopulations": [
+                            {
+                                "frequencies": [
+                                    {
+                                        "population": "AFR_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ],
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org"
+                            },
+                            {
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "AMR_AF"
+                                    }
+                                ]
+                            },
+                            {
+                                "frequencies": [
+                                    {
+                                        "population": "EAS_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ],
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "source": "The Genome Aggregation Database (gnomAD)"
+                            },
+                            {
+                                "frequencies": [
+                                    {
+                                        "alleleFrequency": -1,
+                                        "population": "EUR_AF"
+                                    }
+                                ],
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org"
+                            },
+                            {
+                                "source": "The Genome Aggregation Database (gnomAD)",
+                                "sourceReference": "https://gnomad.broadinstitute.org",
+                                "frequencies": [
+                                    {
+                                        "population": "SAS_AF",
+                                        "alleleFrequency": -1
+                                    }
+                                ]
+                            }
+                        ],
+                        "alternateBases": "TA",
+                        "variantType": "INDEL"
+                    }
+                ],
+                "resultsHandover": null
+            }
+        ]
+    },
+    "beaconHandovers": [
+        {
+            "handoverType": {
+                "id": "CUSTOM",
+                "label": "Project description"
+            },
+            "note": "Project description",
+            "url": "https://www.nist.gov/programs-projects/genome-bottle"
+        }
+    ]
+}

@@ -34,15 +34,6 @@ function App () {
 
 />
 
-
-
-
-
-
-       
-        
-
-
   </Routes>
   </>
   );
@@ -53,9 +44,9 @@ function Layout () { // changed
 
 
   return (
-    <>        <Navbar bg="light" expand="lg">
-    <Container>
-      <Navbar.Brand href="/">CINECA</Navbar.Brand>
+    <>        <Navbar bg="primary" expand="lg" variant="dark">
+    <Container >
+    <Navbar.Brand href="/" >Beacon Network</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
@@ -65,10 +56,19 @@ function Layout () { // changed
       </Navbar.Collapse>
     </Container>
   </Navbar>
-  <Container className='pt-3'>
-        <a  href="https://ega-archive.org/">
-        <Card.Img variant="top" src="/ega.png" style={{width: "230px", position: "relative", left: "40%", padding: "10px"}}/>
+  <Container className='pt-3' fluid>
+    <Row style={{width: "330px", position: "relative", left: "40%", padding: "10px"}}>
+      <Col>
+        <a  href="https://www.cineca-project.eu/">
+        <Card.Img variant="top" src="/CINECA_logo.png" />
+        
       </a>
+      </Col>
+
+      <Col>
+      <div className='beacontitle'><i>Beacon Network</i></div>
+      </Col>
+      </Row>
       </Container>
 
       </>

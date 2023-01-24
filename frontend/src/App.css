@@ -1,5 +1,10 @@
+body{
+  font-size: 14px;
+}
+
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -41,4 +46,15 @@
   position: relative;
   top: 10px;
   left: -10px;
+}
+
+.beacontitle{
+  font-size: 22px;
+  color: #BE1522;
+  padding-top: 5px;
+}
+
+.card{
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  border-color: #5BBBE7;
 }

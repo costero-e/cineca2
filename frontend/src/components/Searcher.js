@@ -2,7 +2,7 @@
 import axios from 'axios';
 import React, { useState } from 'react'; // changed
 
-import { Col, Container, Row, Card } from 'react-bootstrap';
+import { Col, Container, Row, Card, Form } from 'react-bootstrap';
 
 import ResultList from './ResultList';
 import Search from './Search';
@@ -13,17 +13,21 @@ function Searcher () {
   const [cerca, setCerca] = useState(false);
   const [cole, setCole] = useState(false);
 
+
+
   // new
   const search = async ( query, collection ) => {
-  const id = query
+    setCole(collection)
+
+
 
 if (collection === 'individuals') {
-  setCole(collection)
+  
   try {
     
     const res = await axios({
       method: 'get',
-      url: `http://localhost:5050/api/individuals/${id}/`,
+      url: `http://localhost:5050/api/individuals/${query}/`,
 
     });
     setResults(res.data.response.resultSets);
@@ -33,7 +37,6 @@ if (collection === 'individuals') {
     console.error(error);
   }
 } else if (collection === 'g_variants') {
-  setCole(collection)
   const answer_array = query.split(' ');
   const position = answer_array[0]
   const referenceBase = answer_array[1]
@@ -51,11 +54,10 @@ if (collection === 'individuals') {
       console.error(error);
     }}
   else if (collection === 'biosamples') {
-    setCole(collection)
     try {
       const res = await axios({
         method: 'get',
-        url: `http://localhost:5050/api/biosamples/${id}/`,
+        url: `http://localhost:5050/api/biosamples/${query}/`,
 
       });
       setResults(res.data.response.resultSets);
@@ -65,11 +67,10 @@ if (collection === 'individuals') {
       console.error(error);
     }}
     else if (collection === 'analyses') {
-      setCole(collection)
       try {
         const res = await axios({
           method: 'get',
-          url: `http://localhost:5050/api/analyses/${id}/`,
+          url: `http://localhost:5050/api/analyses/${query}/`,
   
         });
         setResults(res.data.response.resultSets);
@@ -79,11 +80,10 @@ if (collection === 'individuals') {
         console.error(error);
       }}
       else if (collection === 'runs') {
-        setCole(collection)
         try {
           const res = await axios({
             method: 'get',
-            url: `http://localhost:5050/api/runs/${id}/`,
+            url: `http://localhost:5050/api/runs/${query}/`,
     
           });
           setResults(res.data.response.resultSets);
@@ -93,28 +93,26 @@ if (collection === 'individuals') {
           console.error(error);
         }}
         else if (collection === 'cohorts') {
-          setCole(collection)
           try {
             const res = await axios({
               method: 'get',
               url: `http://localhost:5050/api/cohorts/`,
       
             });
-            setResults(res.data.response.resultSets);
+            setResults(res.data.response.collections);
             setCerca(true);
             
           } catch (error) {
             console.error(error);
           }}
           else if (collection === 'interactors') {
-            setCole(collection)
             try {
               const res = await axios({
                 method: 'get',
-                url: `http://localhost:5050/api/datasets/${id}/`,
+                url: `http://localhost:5050/api/datasets/${query}/`,
         
               });
-              setResults(res.data.response.resultSets);
+              setResults(res.data.response.collections);
               setCerca(true);
               
             } catch (error) {
@@ -126,10 +124,9 @@ if (collection === 'individuals') {
   return (
 
     <Container className='pt-3' fluid>
-      <h1>Cineca Beacon Network</h1>
       <Row>
         <Col>
-          <Search search={search} /> 
+          <Search search={search}/> 
         </Col>
         </Row>
         <Row>

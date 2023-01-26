@@ -1,6 +1,6 @@
 // client/src/App.js
 import axios from 'axios';
-import React, { useState } from 'react'; // changed
+import React, { useState, useEffect } from 'react'; // changed
 
 import { Col, Container, Row, Card, Form } from 'react-bootstrap';
 
@@ -13,13 +13,9 @@ function Searcher () {
   const [cerca, setCerca] = useState(false);
   const [cole, setCole] = useState(false);
 
-
-
   // new
   const search = async ( query, collection ) => {
     setCole(collection)
-
-
 
 if (collection === 'individuals') {
   

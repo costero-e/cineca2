@@ -7,9 +7,6 @@ import { Image } from "react-bootstrap";
 import { Button } from 'react-bootstrap';
 import { Col, Container, Row, Card } from 'react-bootstrap';
 
-
-
-
 // changed
 function ResultList ({ results, cerca, cole }) {
   console.log(results);
@@ -149,20 +146,13 @@ if (cole === 'g_variants') {
     </Container>
     )
         }
-        
   );
 
-
   return (
-    
-          
     <Container fluid>
-
       {results && results.length === 0 && <p>No results found.</p>}
       {GVariants}
-      
     </Container>
-    
   );
 }
 
@@ -171,7 +161,6 @@ if (cole === 'analyses') {
   const Analyses = results.map((results) => {
 
     return results.results.map(results =>
-
 
 <Container className='entities' fluid>
     <Card id='hola' className='mb-3' key={results._id}  >
@@ -221,7 +210,6 @@ if (cole === 'interactors') {
             __html: `${results.id} | ${sanitize(results.createDateTime)}`
           }}
         ></Card.Title>
-
         <Card.Subtitle
           className='mb-2 text-muted'
         >{results.description} | {results.externalUrl} | {results.name}
@@ -229,8 +217,6 @@ if (cole === 'interactors') {
       </Card.Body>
     </Card>
     </Container>
-    
-        
   );
 
   return (
@@ -358,15 +344,11 @@ if (cole === 'runs') {
   );
 
   return (
-    
-          
+     
     <Container fluid>
-
       {results && results.length === 0 && <p>No results found.</p>}
       {Runs}
-      
     </Container>
-    
   );
 }
 

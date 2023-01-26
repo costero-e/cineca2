@@ -44,7 +44,7 @@ function Layout () { // changed
 
 
   return (
-    <>        <Navbar bg="primary" expand="lg" variant="dark">
+    <>        <Navbar bg="primary" expand="lg" variant="dark" sticky="top">
     <Container >
     <Navbar.Brand href="/" >Beacon Network</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -61,7 +61,6 @@ function Layout () { // changed
       <Col>
         <a  href="https://www.cineca-project.eu/">
         <Card.Img variant="top" src="/CINECA_logo.png" />
-        
       </a>
       </Col>
 

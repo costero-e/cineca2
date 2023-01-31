@@ -37,10 +37,31 @@ if (collection === 'individuals') {
   const position = answer_array[0]
   const referenceBase = answer_array[1]
   const alternateBase = answer_array[3]
+  const json = {
+    "meta": {
+        "apiVersion": "2.0"
+    },
+    "query": {
+        "filters": [
+            {
+                "id": "UBERON:0001256",
+                "scope": "biosamples",
+                "includeDescendantTerms": false
+            }
+        ],
+        "includeResultsetResponses": "HIT",
+        "pagination": {
+            "skip": 0,
+            "limit": 10
+        },
+        "testMode": false,
+        "requestedGranularity": "count"
+    }
+}
     try {
       const res = await axios({
         method: 'get',
-        url: `http://localhost:5050/api/g_variants/?start=${position}&referenceBases=${referenceBase}&alternateBases=${alternateBase}`,
+        url: `http://localhost:5050/api/g_variants/ --json < ${json}`,
 
       });
       setResults(res.data.response.resultSets);
